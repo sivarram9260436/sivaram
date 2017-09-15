@@ -1,0 +1,89 @@
+<html>
+<div class="welcome_header">
+  <h2>Welcome to EDMS & LMS <%#= @employee_detail%></h2>
+  </br>
+</div>
+
+
+
+<div class="welcome_home">
+  <p></p><p>KREATIO EDMS is a sophisticated employee database that helps to manage employee data with ease, consistency and accuracy. It centralizes employee records,and leave details within one easy to use window where employees can view and update their profile.They can also apply for leave, check leave status and leave balance..
+</p>
+</div>
+<h3 style="visibility: hidden;" align="right"><%= link_to 'SignOut',:controller=>"employee", :action=>"logout" %></h3>
+
+</html>
+
+
+<% if @employee.role_id == 2 %>
+    <div class="bdays">
+      <% if !@birth_today.blank? %>
+          <% @birth_today.each do |bt| %>
+              <% if !bt.personal_detail.blank? && !bt.personal_detail.employee_detail.blank? and !bt.personal_detail.employee_detail.official_mailid.blank? %>
+                  <h3> Today is <%= bt.personal_detail.employee_detail.official_mailid %>'s birthday </h3>
+               <a href="mailto:<%= bt.personal_detail.employee_detail.official_mailid %>?subject=Happy Birthday&body=<%= bt.personal_detail.employee_detail.emp_name %>
+On your special day, I wish you good luck.
+I hope this wonderful day will fill up your heart
+with joy and blessings. Have a fantastic birthday,
+celebrate the happiness on every day of your life. Happy Birthday!!"> mailnow </a> 
+                 <h3> Today is <%= bt.personal_detail.employee_detail.official_mailid %>'s birthday </h3>
+              <% end %>
+          <% end %>
+      <% end %>
+
+
+
+      <% if !@birth_tomorrow.blank?%>
+          <% @birth_tomorrow.each do |bt| %>
+
+              <% if !bt.personal_detail.blank? && !bt.personal_detail.employee_detail.blank? && !bt.personal_detail.employee_detail.official_mailid.blank? %>
+                  <h3> Tomorrow will be <%= bt.personal_detail.employee_detail.official_mailid %>'s birthday </h3>
+ <a href="mailto:<%= bt.personal_detail.employee_detail.official_mailid %>?subject=Happy Birthday&body=<%= bt.personal_detail.employee_detail.emp_name %>
+On your special day I wish you good luck. hope this wonderful day will fill up your heartith joy and blessings. Have a fantastic birthda celebrate the happiness on every day of your life. Happy Birthday!!&attachment=//home/sivaram/Desktop/EDMS/public/images/arrow.png"> mailnow </a>
+              <% end %>
+          <% end %>
+      <% end%>
+
+      <%if !@birth_yesterday.blank?%>
+          <% @birth_yesterday.each do |bt| %>
+              <% if !bt.personal_detail.blank? && !bt.personal_detail.employee_detail.blank? && !bt.personal_detail.employee_detail.official_mailid.blank? %>
+                  <h3> Yesterday was <%= bt.personal_detail.employee_detail.official_mailid %>'s birthday </h3>
+
+              <% end %>
+
+          <% end %>
+      <%end%>
+    </div>
+
+
+
+    <% if !@annivers_today.blank?%>
+        <div class="bdays">
+          <% @annivers_today.each do |bt| %>
+              <% if !bt.employee_detail.blank? && !bt.employee_detail.official_mailid.blank? %>
+                  <h3> Today is <%= bt.employee_detail.official_mailid %>'s anniversary day </h3>
+              <% end %>
+          <% end %>
+        </div>
+    <% end %>
+
+    <% if !@annivers_tomorrow.blank?%>
+        <div class="bdays">
+          <% @annivers_tomorrow.each do |bt| %>
+              <% if !bt.employee_detail.blank? && !bt.employee_detail.official_mailid.blank? %>
+                  <h3> Tomorrow will be <%= bt.employee_detail.official_mailid %>'s anniversary day </h3>
+              <% end %>
+          <% end %>
+        </div>
+    <% end %>
+
+    <% if !@annivers_yesterday.blank?%>
+        <div class="bdays">
+          <% @annivers_yesterday.each do |bt| %>
+              <% if !bt.employee_detail.blank? && !bt.employee_detail.official_mailid.blank? %>
+                  <h3> yesterday was <%= bt.employee_detail.official_mailid %>'s anniversary day </h3>
+              <% end %>
+          <% end %>
+        </div>
+    <% end %>
+<% end %>

@@ -1,0 +1,59 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <title> Kreatio </title>
+        <link href="/stylesheets/signin.css"   rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="no_bg">
+       <!-- <div id="wrapper">-->
+        <div class="logo_header">
+          </div> <!-- logo_header -->
+       <!-- <div class="clent_logo">
+          <a href="#"> <img src="/images/client_logo.png" alt="client logo" /> </a>
+        </div>-->
+     <div class="login_block">
+          <%= form_tag(:controller=>"employee", :action=>"login") do %>
+        <!--<div class="login_block">-->
+        <div class="section_block">
+          <h2>LOGIN</h2>
+       <!-- <div class="ribbon-edge-bottomleft"> </div>-->
+        <div class="login_content">
+        <table>
+             <tr>
+               <td colspan="2">
+                 <div class="flash_notice">
+                   <%= flash[:notice] if flash[:notice]!= nil %>
+                 </div>
+               </td>
+             </tr>
+             <tr>
+               <td><label for="email">Email:</label> </td>
+               <td> <%= text_field :employee_detail,:official_mailid,:size=>"25",:class=>'login_field' %> </td>
+             </tr>
+             <tr>
+               <td><label for="password">Password:</label> </td>
+               <td> <%= password_field :employee_detail,:password,:size=>"25",:class=>'login_field' %></td>
+             </tr>
+             <tr>
+               <td> </td>
+               <td>
+                 <div class="remember">
+                  </div>
+                  <div class="submit_button search_fields">
+                  <input class="subm it" type="submit" value="Sign in" name="commit"/>
+                   </div>
+               </td>
+             </tr>
+        </table>
+                <div class="user_detail">
+        <%= link_to "Forgotten password?",:controller=>"admin",:action=>"forgot_password"%> 
+                </div> <!-- user_detail -->
+              </div>
+           </div>
+<%end%>
+          </div> <!-- login_block -->
+        </body>
+</html>

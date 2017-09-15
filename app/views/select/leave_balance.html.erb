@@ -1,0 +1,51 @@
+
+	<style type="text/css">
+table,td,th
+{
+}
+th
+{
+padding:3px;
+background-color:#EBF3DB;
+}
+</style>
+
+	<h3>LISTING LEAVE BALANCE..  </h3>	
+	
+		
+<table border="1" align="center" cellpadding="10" style="border-collapse: collapse;">
+  <tr>
+  
+  
+  <th>LEAVE TYPE</th>
+  <th>TOTAL LEAVES</th>
+  <th>ELIGIBLE LEAVES</th>
+  <th>AVAILED</th>
+  <th>AVAILABLE BALANCE</th>
+  
+  </tr>
+ 
+  <% @leave_detail.each do |t| %>
+  
+  <tr class="<%= cycle('odd', 'even') %>">
+  
+  
+<td><%=t.total_leaves%></td>
+  <td bgcolor="#EBF3DB"><%=LeaveType.find(t.leave_type_id).leave_types%></td>
+
+  <td><%=t.total_leave_balance%></td>
+  <td><%=t.availed%></td>
+  <td><%=t.balance%></td>
+  
+  
+  </tr>
+  <% end %>
+   
+</table>
+
+
+
+
+
+
+

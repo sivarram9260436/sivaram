@@ -1,0 +1,105 @@
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<%= javascript_include_tag '/javascripts/jquery.min.js'%>
+<%= javascript_include_tag '/javascripts/jquery-ui.min.js'%>
+
+<% if flash[:notice]%> 
+<div class="flash_notice"><%= flash[:notice]%> </div>
+<% end %>
+<%# logger.info"===#{@user.inspect}" %>
+<% if !@user.blank? and !@user.dob.blank? %>
+
+    <% FDETAILS[@user.dob.to_date.strftime("%m/%d/%Y").chop[0..-4] + "2017"] = "Happy birthday #{@user.emp_name}" %>
+<% end %>
+    <% if !@user.blank? and !@user.dob.blank? %>
+    <% FDETAILS[@user.personal_detail.anniversary_date.to_date.strftime("%m/%d/%Y").chop[0..-4] + "2017"] = "Happy annivessary #{@user.emp_name}" %>
+<% end %>
+
+<% logger.info"===the wat is requ#{FDETAILS.inspect}" %>
+
+<% logger.info"===the new requ#{HDETAILS.inspect}" %>
+<%= form_tag(:controller=>"select",:action=>"create") do %>
+<%=raw error_messages(@leave_record)%>
+<table>
+  <h3>Apply Leave Here</h3><br/>  
+<tr>
+<td>Leave Type*:</td><td><%=select :leave_record, :leave_type_id,LeaveType.all.collect{|aa| [aa.leave_types,aa.id]}%></td></tr>
+<tr>
+<td>From Date*:</td>
+<td><%= text_field :leave_record, :from_date,:size => 15%></td></tr>
+
+<tr>
+<td>To Date*:</td>
+<td><%= text_field :leave_record, :to_date,:size => 15%></td></tr>
+<tr>
+<td>No.of.Days*:</td>
+<td><%=text_field :leave_record, :no_of_days,:size => 15%></td></tr>
+<tr>
+<td>Reason*:</td>
+	<td><%=text_area :leave_record, :reason,:cols => "43", :rows => "3" %></td></tr>
+
+  <%= hidden_field 'employee_detail','id',:value=>session[:emp_id]%>
+
+<tr><td><%= submit_tag("Save") %></td></tr>
+
+<% end %>
+</table>
+<script type="text/javascript">
+    var holidays = {};
+    var optionals = {};
+    <% HDETAILS.each do |k,v| %>
+        holidays[new Date('<%=k%>')] = "<%=v%>";
+    <% end %>
+    <% FDETAILS.each do |k,v| %>
+        optionals[new Date('<%=k%>')] = "<%=v%>";
+    <% end %>
+
+    $(function(){
+        //$('#leave_record_from_date').datepicker({ dateFormat: "yy-mm-dd" });
+        $('#leave_record_from_date').datepicker({
+            dateFormat: "yy-mm-dd",
+            firstDay: 1,
+            beforeShowDay: function( date ) {
+                var holiday = holidays[date];
+                var optional = optionals[date];
+                if( holiday ) {
+                    return [true, "holiday", holiday];
+                } else if( optional ) {
+                    return [true, "optional", optional];
+                } else {
+                    return [true, "",""];
+                }
+            }
+        });
+
+        //$('#leave_record_to_date').datepicker({ dateFormat: "yy-mm-dd" });
+        $('#leave_record_to_date').datepicker({
+            dateFormat: "yy-mm-dd",
+            firstDay: 1,
+            beforeShowDay: function( date ) {
+                var holiday = holidays[date];
+                var optional = optionals[date];
+                if( holiday ) {
+                    return [true, "holiday", holiday];
+                } else if( optional ) {
+                    return [true, "optional", optional];
+                } else {
+                    return [true, "",""];
+                }
+            }
+        });
+
+        $('#leave_record_to_date').change(function() {
+            var start = $('#leave_record_from_date').attr('value')
+            var end = $('#leave_record_to_date').attr('value');
+            $.ajax({
+                type:'GET',
+                url:'business_days_calculation?start='+start+'&end='+end,
+                dataType:'text',
+                success:function (data){
+                    $('#leave_record_no_of_days').attr('value',data);
+                }
+            })
+        });
+    });
+</script>
+

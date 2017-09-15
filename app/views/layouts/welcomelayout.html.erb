@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>EDMS and Leave Management System</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+<%= csrf_meta_tags %>
+
+<%= stylesheet_link_tag '/stylesheets/globalstyle'%>
+<%= stylesheet_link_tag '/stylesheets/backupstyle'%>
+
+<%= javascript_include_tag '/javascripts/jquery'%>
+<%= javascript_include_tag '/javascripts/tooltip'%>
+<%= javascript_include_tag '/javascripts/admin'%>
+<%= javascript_include_tag "/javascripts/rails.js"%>
+
+</head>
+
+<body>
+
+<div id="container">
+
+ <div id="header">
+       		 	
+     	        <div id="header-left">
+                  <%= image_tag "/images/kreatio_logo.jpg", :alt=>"Logo", :class => "logo", :title => "Logo" %> 
+           	    </div>
+            	<div id="header-right">
+			<% if EmployeeDetail.find(session[:emp_id]).emp_name == nil%>
+			<p> Login as: <%= EmployeeDetail.find(session[:emp_id]).official_mailid%></p>
+			
+			<%else%>
+            		<p> Login as: <%= EmployeeDetail.find(session[:emp_id]).emp_name%></p>
+            		<%end%>
+                   	<b><%= link_to 'CHANGE PASSWORD',{:controller=>"employee",:action=>"change_password"}%></b> |                        
+                   	<b><%= link_to 'SIGNOUT',{:controller=>"employee",:action=>"logout"}%></b>       
+                </div>
+
+         	</div>
+<div id=content-menu>
+</div>
+
+<div id="left">
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="/employee/welcome" id="current">Home</a></li>
+<li class="green"><a href="#">Employee Profile</a>
+<ul style="display:none;">
+<li id="new">
+<a class="contact" title="updateprofile" href="/employee/new">Modify profile</a>
+</li>
+<li id="index">
+<a class="contact" title="ViewProfile" href="/employee/index">View Profile</a>
+</li>
+<li id="view_others_profile">
+<a class="contact" title="" href="/employee/view_others_profile">View others profile</a>
+</li>
+
+<!--<%if session[:role]=="USER" %>
+<li id="view_others_profile">
+<a class="contact" title="" href="/employee/view_others_profile">View others profile</a>
+</li>
+<%end%>-->
+</ul>
+</li>
+<li class="green"><a href="#">Leave Details</a>
+<ul style="display:none;">
+<li id="apply">
+<a class="contact" title="ApplyLeave" href="/select/apply">ApplyLeave</a>
+</li>
+<li id="cancel">
+<a class="contact" title="LeaveCancellation" href="/select/cancel">Leave Cancellation</a>
+</li>
+<li id="view_approved">
+<a class="contact" title="ViewLeaveApproved" href="/select/view_approved">View Leave Approved</a>
+</li>
+<li id ="list">
+<a class="contact" title="ViewLeaveStatus" href="/select/list">View Leave Status</a>
+</li>
+<li id ="select_year">
+<a class="contact" title="ViewLeaveBalance" href="/select/leave_balance">View Leave Balance</a>
+</li>
+<li id ="leave_balance">
+</li>
+</ul>
+
+<%if session[:role]=="RM"%>
+<li class="green">
+<a href="#">RM Controls</a>
+<ul style="display:none;">
+<li id="unapproved_leave">
+<a class="contact" title="Leave" href="/select/unapproved_leave">Approve Leaves</a>
+</li>
+<li id="list_all">
+<a class="contact" title="Leave" href="/select/list_all">View / Cancel Approved Leaves</a>
+</li>
+
+<li id="select_employee">
+<a class="contact" title="Leave" href="/select/select_employee">View employee leave balance</a>
+</li>
+</ul>
+</li>
+<%end%>
+
+<%if session[:role]=="HR"%>
+<li class="green"><a href="#"> HR Controls</a>
+<ul style="display:none;">
+<li id="new_user">
+<a class="contact" title="HR" href="/admin/new_user">Add user</a>
+</li>
+<li id="display">
+<a class="contact" title="HR" href="/employee/display">View employee profile</a>
+</li>
+<!--li id="edit_leave">
+<a class="contact" title="HR" href="/select/edit_leave">Mid Joinee</a>
+</li-->
+<li id="view_employee_leave">
+<a class="contact" title="HR" href="/select/view_employee_leave">View employee leave balance</a>
+</li>
+<li id="hr_approve">
+<a class="contact" title="HR" href="/select/hr_approve">Approve Leaves</a>
+</li>
+<li id="hr_approve_view">
+ <a class="contact" title="HR" href="/select/hr_approve_view">View Approved Leaves</a>
+</li>
+<li id="deactivate_users">
+<a class="contact" title="" href="/employee/deactivate_users">Deactivate Users</a>
+</li>
+<li id="detect_unapplied_leaves">
+<a class="contact" title="" href="/select/detect_unapplied_leaves">Deduct Leaves</a>
+</li>
+<li id="emp_leave_list">
+<a class="contact" title="" href="/employee/leave_list_export">Export Leaves</a>
+</li>
+<li id="imp_dates">
+  <a class="contact" title="" href="/employee/date_list">Important Dates</a>
+</li>
+<li id="add_leave">
+    <a class="contact" title="" href="/employee/fill_mail">Add Compoff</a>
+</li>
+
+  <li id="change_role">
+    <a class="contact" title="" href="/employee/change_role">Change Role</a>
+  </li>
+  <li id="leave_generate">
+    <a class="contact" title="HR" href="/select/leave_generate">Yearly leave generation</a>
+  </li>
+
+  <li id="leave_balance_of_all_employee">
+    <% a = EmployeeDetail.find_by_id(session[:emp_id]).office_type %>
+    <a class="contact" title="HR" href="/employee/leave_balance_of_all_employee"><%= "Leave balance of all #{a.name} employee"%></a>
+  </li>
+
+
+  </ul>
+  </li>
+  <%end%>
+
+
+
+
+<!--li><a class="contact" title="ViewDocuments" href="/upload/documents">HR Policies</a>
+</li-->
+<li><a class="contact" title="ViewDocuments" href="/select/documents">Miscellaneous</a>
+</li>
+</ul>
+</div>
+
+<h4><a href="/employee/contact_us">Contact Us</a></div> </h4>
+
+<div id="right">
+  
+<%= yield %>
+  </div>
+
+<div id="footer">Employee and Leave Management Software </div>
+</div>
+ 
+ 
+</body>
+</html>

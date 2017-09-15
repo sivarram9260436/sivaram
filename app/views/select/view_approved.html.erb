@@ -1,0 +1,37 @@
+<style type="text/css">
+table,td,th
+{
+}
+th
+{
+padding:1px;
+background-color:#EBF3DB;
+text-align:left;
+width:120px;
+}
+</style>
+<% if !@leave_record.blank? && !@leave_record.where(:year=>Time.now.year).blank? && !@leave_record.where(:year=>Time.now.year).where("status =?", "approved").blank? %>
+    Total leaves taken this year = <%= @leave_record.where(:year=>Time.now.year).where("status =?", "approved").sum(:no_of_days)%>
+<% end %>
+<table border="1" style="border-collapse: collapse;">
+    <tr>      
+       <th width=>LEAVE TYPE</th>
+       <th>FROM DATE</th>
+       <th>TO DATE</th>
+       <th>REASON</th>
+       <th>NO.OF DAYS</th> 
+       <th>APPROVAL STATUS</th>
+    </tr>
+   <% @leave_record.each do |t| %>
+    <tr class="<%= cycle('odd', 'even') %>"> 
+      <td><%=LeaveType.find(t.leave_type_id).leave_types%></td>
+      <td><%=t.from_date%></td>
+      <td><%=t.to_date%></td>
+      <td><%=t.reason%></td>
+      <td><%=t.no_of_days%></td>
+      <td><%=t.status%></td>
+    </tr>
+    <% end %>
+</table>
+  
+  

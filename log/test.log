@@ -1,0 +1,237 @@
+Unable to load role_task, underlying cause No such file to load -- role_task 
+
+ /home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:306:in `rescue in depend_on'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:301:in `depend_on'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:214:in `require_dependency'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:809:in `try_to_load_dependency'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:824:in `block in require_fixture_classes'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:821:in `each'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:821:in `require_fixture_classes'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:804:in `fixtures'
+/home/sivaram/Desktop/EDMS/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sivaram/Desktop/EDMS/test/test_helper.rb:5:in `<top (required)>'
+/home/sivaram/Desktop/EDMS/test/unit/leave_record_test.rb:1:in `require'
+/home/sivaram/Desktop/EDMS/test/unit/leave_record_test.rb:1:in `<top (required)>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:10:in `require'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:9:in `each'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:4:in `select'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:4:in `<main>'
+Unable to load role_task, underlying cause No such file to load -- role_task 
+
+ /home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:306:in `rescue in depend_on'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:301:in `depend_on'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activesupport-3.1.3/lib/active_support/dependencies.rb:214:in `require_dependency'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:809:in `try_to_load_dependency'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:824:in `block in require_fixture_classes'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:821:in `each'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:821:in `require_fixture_classes'
+/home/sivaram/.rvm/gems/ruby-1.9.3-p194@Edms/gems/activerecord-3.1.3/lib/active_record/fixtures.rb:804:in `fixtures'
+/home/sivaram/Desktop/EDMS/test/test_helper.rb:10:in `<class:TestCase>'
+/home/sivaram/Desktop/EDMS/test/test_helper.rb:5:in `<top (required)>'
+/home/sivaram/Desktop/EDMS/test/functional/cancel_mailer_test.rb:1:in `require'
+/home/sivaram/Desktop/EDMS/test/functional/cancel_mailer_test.rb:1:in `<top (required)>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:10:in `require'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:10:in `block (2 levels) in <main>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:9:in `each'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:9:in `block in <main>'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:4:in `select'
+/home/sivaram/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/rake/rake_test_loader.rb:4:in `<main>'
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSHOW search_path[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "personal_details"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "leave_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_records"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_types"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_types" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "roles"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (298486374)
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "personal_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_details"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_records"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "leave_types"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_types" ("id") VALUES (298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "roles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (298486374)[0m
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "personal_details"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "leave_records"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "leave_types"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_types" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "roles"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (298486374)
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "personal_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_details"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "leave_records"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "leave_types"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_types" ("id") VALUES (298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "roles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (298486374)[0m
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "personal_details"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_records"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "leave_types"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_types" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "roles"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (298486374)
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "personal_details"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_details"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_records"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_types"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_types" ("id") VALUES (298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "roles"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "roles" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (298486374)[0m
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "documents" DISABLE TRIGGER ALL;ALTER TABLE "employee_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_details" DISABLE TRIGGER ALL;ALTER TABLE "leave_records" DISABLE TRIGGER ALL;ALTER TABLE "leave_types" DISABLE TRIGGER ALL;ALTER TABLE "office_types" DISABLE TRIGGER ALL;ALTER TABLE "personal_details" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "personal_details"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "personal_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "leave_details"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_details" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "leave_records"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "leave_records" ("created_at", "updated_at", "id") VALUES ('2017-09-04 09:51:58', '2017-09-04 09:51:58', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "leave_types"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "leave_types" ("id") VALUES (980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "leave_types" ("id") VALUES (298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "roles"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "roles" ("id") VALUES (980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "roles" ("id") VALUES (298486374)
+PG::Error: ERROR:  relation "teams" does not exist
+LINE 4:              WHERE a.attrelid = '"teams"'::regclass
+                                        ^
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"teams"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "documents" ENABLE TRIGGER ALL;ALTER TABLE "employee_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_details" ENABLE TRIGGER ALL;ALTER TABLE "leave_records" ENABLE TRIGGER ALL;ALTER TABLE "leave_types" ENABLE TRIGGER ALL;ALTER TABLE "office_types" ENABLE TRIGGER ALL;ALTER TABLE "personal_details" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL

@@ -1,0 +1,146 @@
+ <html>
+<%#@profiles.each do |p|%>
+<%#for p in @profiles%>
+<%p=@profile%>
+<h2>View The Profile</h2>
+<fieldset>
+<legend class="field_set">Official Details</legend>
+<table cellspacing="8" align="left">
+<tr>
+<th align="left">Title:</th>
+<td><%=p.title%></td></tr>
+<tr><th align="left">First Name:</th>
+<td><%=p.emp_name%></td></tr>
+<tr><th align="left">Middle Name:</th>
+<td><%=p.middle_name%></td></tr>
+<tr><th align="left">Last Name:</th>
+<td><%=p.last_name%></td></tr>
+<tr><th align="left">Employee ID:</th>
+  <td><%=p.empl_id%></td></tr>
+<tr><th align="left">Date Of Birth in Certificate:</th>
+<td><%=p.dob%></td></tr>
+
+
+
+  <!--<tr><th align="left">Actual D.O.B:</th>-->
+    <!--<td><!%=p.actual_dob%></td></tr>-->
+
+  <!--<tr><th align="left">Actual D.O.B:</th>-->
+    <!--<td><1%=p.actual_dob%></td></tr>-->
+
+<tr><th align="left">Gender:</th>
+<td><%=p.gender%></td></tr>
+<tr><th align="left">Martial Status:</th>
+<td><%=p.martial_status%></td></tr>
+<tr><th align="left">Contact Number:</th>
+<td><%=p.contact_no%></td></tr>
+<tr><th align="left">Office Contact Number:</th>
+<td><%=p.office_contact_no%></td></tr>
+<tr><th align="left">PAN Number:</th>
+<td><%=p.pan_number%></td></tr>
+<tr><th align="left">PF Number:</th>
+<td><%=p.pf_number%></td></tr>
+
+
+
+  <tr><th align="left">Aadhaar Number:</th>
+    <td><%=p.aadhar_number%></td></tr>
+
+
+  <tr><th align="left">Official Mail Id:</th>
+<td><%=p.official_mailid%></td></tr>
+<tr><th align="left">Leave Approver Mail Id:</th>
+<td><%=p.manager_mailid%></td></tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend class="field_set">Personal Details</legend>
+<table cellspacing="8">
+<tr><th align="left">Father Name:</th>
+<td><%=p.personal_detail.father_name if p.personal_detail%></td></tr>
+<tr><th align="left">Mother Name:</th>
+<td><%=p.personal_detail.mother_name if p.personal_detail%></td></tr>
+
+
+
+  <!--<tr><th align="left">Actual D.O.B:</th>-->
+    <!--<td><!%=p.personal_detail.p_dob if p.personal_detail%></td></tr>-->
+
+
+
+<tr><th align="left">Personal Mail Id:</th>
+<td><%=p.personal_detail.personalmail_id if p.personal_detail%></td></tr>
+<tr><th align="left">Anniversary Date:</th>
+<td><%=p.personal_detail.anniversary_date if p.personal_detail%></td></tr>
+<tr><th align="left">Local Address:</th>
+<td><%=p.personal_detail.local_address if p.personal_detail%></td></tr>
+<tr><th align="left">Permanent Address:</th>
+<td><%=p.personal_detail.permanent_address if p.personal_detail%></td></tr>
+<tr><th align="left">Change Of Address:</th>
+<td><%=p.personal_detail.changeof_address if p.personal_detail%></td></tr>
+<tr><th align="left">Emergency Person:</th>
+<td><%=p.personal_detail.guardian if p.personal_detail%></td></tr>
+<tr><th align="left">Relationship:</th>
+<td><%=p.personal_detail.relationship if p.personal_detail%></td></tr>
+<tr><th align="left">Emergency Contact:</th>
+<td><%=p.personal_detail.emergency_contact if p.personal_detail%></td></tr>
+<tr><th align="left">Blood group:</th>
+<td><%=p.personal_detail.blood_group if p.personal_detail%></td></tr>
+
+  <tr><th align="left">Passport number:</th>
+    <td><%=p.personal_detail.passport_number if p.personal_detail%></td></tr>
+  <tr><th align="left">LinkedIn:</th>
+
+    <% @link_linkedin=["https://www.linkedin.com/in/", p.personal_detail.linkedin_url ].join %>
+    <td><%= link_to p.personal_detail.linkedin_url, @link_linkedin %></td></tr>
+
+  <tr><th align="left">Facebook:</th>
+    <% @link_facebook=["https://www.facebook.com/", p.personal_detail.facebook_url ].join %>
+    <td><%= link_to p.personal_detail.facebook_url, @link_facebook %></td></tr>
+
+  <tr><th align="left">Twitter:</th>
+    <% @link_twitter=["https://twitter.com/", p.personal_detail.twitter_url ].join %>
+    <td><%= link_to p.personal_detail.twitter_url, @link_twitter %></td></tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend class="field_set">Previous Experience</legend>
+<table cellspacing="8"> 
+<tr><th align="left">CompanyI:</th>
+<td><%=p.personal_detail.company_name if p.personal_detail%></td></tr>
+<tr><th align="left">Designation:</th>
+<td><%=p.personal_detail.designation if p.personal_detail%></td></tr>
+<tr><th align="left">Experience:</th>
+<td><%=p.personal_detail.experience if p.personal_detail%></td></tr>
+
+<tr><th align="left">CompanyII:</th>
+<td><%=p.personal_detail.company_name2 if p.personal_detail%></td></tr>
+<tr><th align="left">Designation:</th>
+<td><%=p.personal_detail.designation2 if p.personal_detail%></td></tr>
+<tr><th align="left">Experience:</th>
+<td><%=p.personal_detail.experience2 if p.personal_detail%></td></tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend class="field_set">Qualifications Details</legend>
+<table cellspacing="8"> 
+<tr><th align="left">Pg:</th>
+<td><%=p.personal_detail.pg if p.personal_detail%></td><th align="right">Year:</th><td><%=p.personal_detail.pg_year if p.personal_detail%></td></tr>
+
+<tr><th align="left">Ug:</th>
+<td><%=p.personal_detail.ug if p.personal_detail%></td><th align="right">Year:</th><td><%=p.personal_detail.ug_year if p.personal_detail%></td></tr>
+
+<tr><th align="left">Diploma:</th>
+  <td><%=p.personal_detail.diploma if p.personal_detail%></td><th align="right">Year:</th><td><%=p.personal_detail.diploma_year if p.personal_detail%></td></tr>
+
+<tr><th align="left">12th/Puc:</th>
+<td><%=p.personal_detail.puc if p.personal_detail%></td><th align="right">Year:</th><td><%=p.personal_detail.puc_year if p.personal_detail%></td></tr>
+
+<tr><th align="left">10th:</th>
+<td><%=p.personal_detail.tenth if p.personal_detail%></td><th align="right">Year:</th><td><%=p.personal_detail.tenth_year if p.personal_detail%></td></tr>
+</table>
+</fieldset>
+

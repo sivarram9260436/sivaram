@@ -1,0 +1,78 @@
+<div class = "year">
+ <%= select_year(Date.today, {:start_year => Time.now.year, :end_year => Time.now.year+1}, {:class => "all_year"})%>
+ <%= select_tag(:select_status, options_for_select([['Approved', 'approved'], ['Cancelled', 'cancelled'], ['Pending', 'Pending']]),:prompt => "Select status", :selected => "Select status", :class => "status_change") %>
+</div>
+
+<style type="text/css">
+  table,td,th
+  {
+  }
+  th
+  {
+   padding:3px;
+   background-color:#EBF3DB;
+   }
+</style>
+
+ <table border="1" align="left" style="border-collapse: collapse;" class = "leave_status_list">
+   <tr>
+     <th>LEAVE TYPE</th>
+     <th>FROM DATE</th>
+     <th>TO DATE</th>
+     <th>REASON</th>
+     <th>NO.OF DAYS</th>
+     <th>STATUS</th>
+   </tr>
+
+<% if flash[:notice]%>
+
+<div class="flash_notice"><%= flash[:notice]%> </div>
+
+<% end %>
+<% @leave_record.each do |t| %>
+
+  <tr class="<%= cycle('odd', 'even') %>">
+     <td><%=LeaveType.find(t.leave_type_id).leave_types%></td>
+     <td><%=t.from_date%></td>
+     <td><%=t.to_date%></td>
+     <td><%=t.reason%></td>
+     <td><%=t.no_of_days%></td>
+     <td><%=t.status%></td>
+   </tr>
+   <% end %>
+ </table>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+        $(".all_year").change(function(event){
+                event.preventDefault();
+                var path = window.location
+                var yea = $("#date_year").val()
+                $.ajax({
+                        type: "GET",
+                        url: "/select/list",
+                        data: "year=" + $("#date_year").val() + "&status=" + $("#select_status").val(),
+                        // beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+                        datatype: "html",
+                        success: function(data) {
+                                $(".leave_status_list").html(data);
+                        }
+                });
+        });
+});
+
+$(function(){
+        $(document).on("change", ".status_change", function(){
+        $.ajax({
+                type: 'GET',
+                url: "/select/list",
+                data: "year=" + $("#date_year").val() + "&status=" + $("#select_status").val(),
+                datatype: 'html',
+                success: function(data) {
+                        $(".leave_status_list").html(data)
+                }
+        });
+        });
+});
+
+</script>

@@ -1,0 +1,237 @@
+GIT
+  remote: git://github.com/galetahub/simple-captcha.git
+  revision: 5cdfe83b04387ac49173c3ade86bd4ebdaf4cd60
+  specs:
+    galetahub-simple_captcha (0.1.3)
+
+GIT
+  remote: git://github.com/mark-moseley/linecache
+  revision: 869c6a65155068415925067e480741bd0a71527e
+  specs:
+    linecache19 (0.5.12)
+      ruby_core_source (>= 0.1.4)
+
+GIT
+  remote: git://github.com/thedarkone/rails-dev-boost.git
+  revision: a995f0a3734ecf36da74dcce32ed2ba74e25c56d
+  specs:
+    rails-dev-boost (0.1.1)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (3.1.3)
+      actionpack (= 3.1.3)
+      mail (~> 2.3.0)
+    actionpack (3.1.3)
+      activemodel (= 3.1.3)
+      activesupport (= 3.1.3)
+      builder (~> 3.0.0)
+      erubis (~> 2.7.0)
+      i18n (~> 0.6)
+      rack (~> 1.3.5)
+      rack-cache (~> 1.1)
+      rack-mount (~> 0.8.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.0.3)
+    activemodel (3.1.3)
+      activesupport (= 3.1.3)
+      builder (~> 3.0.0)
+      i18n (~> 0.6)
+    activerecord (3.1.3)
+      activemodel (= 3.1.3)
+      activesupport (= 3.1.3)
+      arel (~> 2.2.1)
+      tzinfo (~> 0.3.29)
+    activeresource (3.1.3)
+      activemodel (= 3.1.3)
+      activesupport (= 3.1.3)
+    activesupport (3.1.3)
+      multi_json (~> 1.0)
+    acts_as_ferret (0.5.4)
+      ferret (>= 0.11.8)
+      rails (>= 3.0)
+    acts_as_tree (1.1.0)
+      activerecord (>= 3.0.0)
+    ansi (1.4.3)
+    archive-tar-minitar (0.5.2)
+    arel (2.2.3)
+    builder (3.0.0)
+    capistrano (2.12.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    chronic (0.6.7)
+    columnize (0.3.6)
+    crack (0.3.1)
+    debugger (1.6.8)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.5)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.8)
+    diff-lcs (1.1.3)
+    erubis (2.7.0)
+    fast_stack (0.2.0)
+    fastercsv (1.5.5)
+    ferret (0.11.8.4)
+      rake
+    flamegraph (0.9.5)
+    formtastic (2.2.1)
+      actionpack (>= 3.0)
+    highline (1.6.13)
+    hike (1.2.1)
+    htmlentities (4.3.1)
+    i18n (0.6.0)
+    jquery-rails (1.0.19)
+      railties (~> 3.0)
+      thor (~> 0.14)
+    jquery_datepicker (0.4)
+    json (1.7.3)
+    kgio (2.7.4)
+    mail (2.3.3)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    memcache-client (1.8.5)
+    mime-types (1.19)
+    mixable_engines (0.1.1)
+      activesupport (>= 3.0.0)
+      i18n
+    multi_json (1.3.6)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.5.2)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
+    nokogiri (1.5.5)
+    pg (0.14.0)
+    polyglot (0.3.3)
+    rack (1.3.6)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-mini-profiler (0.10.2)
+      rack (>= 1.2.0)
+    rack-mount (0.8.3)
+      rack (>= 1.0.0)
+    rack-ssl (1.3.2)
+      rack
+    rack-test (0.6.1)
+      rack (>= 1.0)
+    rails (3.1.3)
+      actionmailer (= 3.1.3)
+      actionpack (= 3.1.3)
+      activerecord (= 3.1.3)
+      activeresource (= 3.1.3)
+      activesupport (= 3.1.3)
+      bundler (~> 1.0)
+      railties (= 3.1.3)
+    railties (3.1.3)
+      actionpack (= 3.1.3)
+      activesupport (= 3.1.3)
+      rack-ssl (~> 1.3.2)
+      rake (>= 0.8.7)
+      rdoc (~> 3.4)
+      thor (~> 0.14.6)
+    raindrops (0.10.0)
+    rake (0.9.2.2)
+    rdoc (3.12)
+      json (~> 1.4)
+    recaptcha (0.3.4)
+    rmagick (2.16.0)
+    roo (2.7.1)
+      nokogiri (~> 1)
+      rubyzip (~> 1.1, < 2.0.0)
+    ruby-debug-base19 (0.11.25)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby_core_source (>= 0.1.4)
+    ruby-debug-base19x (0.11.30.pre10)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      rake (>= 0.8.1)
+      ruby_core_source (>= 0.1.4)
+    ruby-debug19 (0.11.6)
+      columnize (>= 0.3.1)
+      linecache19 (>= 0.5.11)
+      ruby-debug-base19 (>= 0.11.19)
+    ruby_core_source (0.1.5)
+      archive-tar-minitar (>= 0.5.2)
+    rubyzip (1.2.1)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
+    simple_captcha (0.1.3)
+    sneaky-save (0.0.2)
+      activerecord (>= 2.3.2)
+    sprockets (2.0.4)
+      hike (~> 1.2)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    thor (0.14.6)
+    tilt (1.3.3)
+    treetop (1.4.10)
+      polyglot
+      polyglot (>= 0.3.1)
+    turn (0.8.3)
+      ansi
+    tzinfo (0.3.33)
+    unicorn (4.3.1)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    will_paginate (3.0.3)
+    xhtmldiff (1.0.0)
+      diff-lcs (>= 1.1.1)
+    xml-simple (1.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  acts_as_ferret (>= 0.5)
+  acts_as_tree
+  builder
+  capistrano
+  chronic
+  crack
+  debugger
+  diff-lcs
+  fast_stack
+  fastercsv
+  flamegraph
+  formtastic
+  galetahub-simple_captcha!
+  htmlentities
+  jquery-rails
+  jquery_datepicker
+  linecache19!
+  memcache-client
+  mime-types
+  mixable_engines
+  net-sftp
+  net-ssh
+  nokogiri
+  pg
+  rack-mini-profiler
+  rails (= 3.1.3)
+  rails-dev-boost!
+  recaptcha
+  rmagick
+  roo
+  ruby-debug-base19x (~> 0.11.30.pre4)
+  ruby-debug19 (>= 0.5.11)
+  sanitize
+  simple_captcha
+  sneaky-save
+  turn
+  unicorn
+  will_paginate (>= 3.0.pre)
+  xhtmldiff
+  xml-simple
+
+BUNDLED WITH
+   1.10.0

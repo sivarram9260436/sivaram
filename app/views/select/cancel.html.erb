@@ -1,0 +1,34 @@
+<style type="text/css">
+table,td,th
+{ 
+}
+th
+{
+background-color:#EBF3DB;
+text-align:left;
+}
+</style>
+<table border="1" style="border-collapse: collapse;">
+  <tr>   
+    <th>LEAVE TYPE</th>
+    <th>FROM DATE</th>
+    <th>TO DATE</th>
+    <th>REASON</th>
+    <th>NO.OF DAYS</th> 
+    <th>STATUS</th>
+    <th>CANCEL LEAVE</th>
+  </tr>
+  
+  <% @leave_record.each do |t| %>
+  <tr class="<%= cycle('odd', 'even') %>">  
+    <td><%=LeaveType.find(t.leave_type_id).leave_types%></td>
+    <td><%=t.from_date%></td>
+    <td><%=t.to_date%></td>
+    <td><%=t.reason%></td>
+    <td><%=t.no_of_days%></td>
+    <td><%=t.status%></td>      
+    <td><%=link_to 'Cancel',:controller=>"select",:action=>"cancel_leave",:id=>t.id,:employee_detail_id=>t.employee_detail_id,:leave_type_id=>t.leave_type_id,:no_of_days=>t.no_of_days,:year=>t.year,:flag=>"user" %></td>  
+  </tr>
+  <%end %> 
+  </table>
+  
